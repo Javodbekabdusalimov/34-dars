@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.box__element {
+  background-color: red;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  animation-name: animation;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+}
+@keyframes animation {
+  0% {
+    background-color: red;
+    top: 0;
+    left: 0;
+  }
+  25% {
+    background-color: blue;
+    top: 0;
+    left: calc(100% - 150px);
+  }
+  50% {
+    background-color: brown;
+    top: calc(100% - 150px);
+    left: calc(100% - 150px);
+  }
+  75% {
+    background-color: green;
+    left: 0;
+    top: calc(100% - 150px);
+  }
+  100% {
+    background-color: yellow;
+    top: 0;
+    left: 0;
+  }
+}
